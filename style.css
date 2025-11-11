@@ -3,18 +3,16 @@
 body {
     color: white;
     background-color: rgb(255, 145, 0);
-    margin-top: 50px;
-    align-items: center;
+    margin: 0;
     text-align: center;
-    font-family: 'Bahiana';
-    padding: auto;
-    font-size: 20px;
+    font-family: 'Bahiana', cursive;
+    font-size: 22px;
 }
 
 header {
-    display: inline;
-    align-items: center;
-    flex-direction: column;
+    background-color: rgb(0, 0, 49);
+    padding: 30px 0;
+    color: white;
 }
 
 h1 {
@@ -23,15 +21,67 @@ h1 {
 }
 
 h2 {
-    color: rgb(0, 0, 49);
-    font-size: 100px;
-    margin-top: 0;
-    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-top: 10px;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: white;
+    font-size: 25px;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* Cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: rgb(0, 0, 49);
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.6);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 15px;
     font-size: 30px;
-    margin: 10px 25px 0 25px;
+    color: gold;
+}
+
+.card p {
+    font-size: 18px;
+    color: white;
+}
+
+footer {
+    background-color: rgb(0, 0, 49);
+    padding: 20px;
+    color: white;
+    font-size: 18px;
 }
